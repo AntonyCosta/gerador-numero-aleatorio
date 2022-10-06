@@ -1,0 +1,124 @@
+:root {
+  /* Paleta branca e preta */
+  --c1: #dedede;
+  --c2: #717171;
+  --c3: #2e2e2e;
+  --c4: #111111;
+  --c5: #000000;
+/* Paleta Azul */
+  --b1: #b9d4ff;
+  --b2: #468dff;
+  --b3: #126dff;
+  --b4: #0357de;
+}
+
+body {
+  font-family: 'Poppins', arial, sans-serif;
+  background: var(--b1);  
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.container {
+  margin: auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.titulo-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.titulo {
+  text-align: center;
+  padding: 0px 10px;
+  gap: 60px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.titulo-frase {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0px 10px;
+  box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--c4);
+  border-right: 1px solid var(--c3);
+}
+
+.geradores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 0px 20px;
+  width: max-content;
+}
+.geradores input {
+  border: 2px solid var(--c2);
+  background-color: var(--c1);
+
+  border-radius: 4px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#min {
+  border-bottom: 2px solid var(--c4);
+  border-right: 2px solid var(--c4);
+}
+#max {
+  border-top: 2px solid var(--c4);
+  border-right: 2px solid var(--c4);
+}
+
+.geradores-texto {
+  text-align: end;
+}
+
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(var(--b3), var(--b4));
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  font: 600 1.2rem "Poppins", sans-serif;
+  color: var(--p5);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: linear-gradient(var(--b2), var(--b3));
+}
+
+.resultado-final {
+    font-size: 4rem;
+    padding: 5px;
+    margin-top: 30px;
+
+    border-width: 4px 2px;
+    border-style: solid;
+    border-color: var(--c4);
+    border-radius: 4px;
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 1.4rem;
+  }
+  .titulo-frase, .geradores, .geradores input {
+    font-size: 1rem;
+  }
+}

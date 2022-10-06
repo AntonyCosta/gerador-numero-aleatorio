@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sorteio de número</title>
+  </head>
+  <body>
+    <div class="titulo-index container">
+      <h1 class="titulo">Sorteio de Número</h1>
+      <p class="titulo-frase">
+        Você pode realizar sorteio de números aleatórios<br />escolha um número
+        mínimo e máximo e boa sorte.
+      </p>
+    </div>
+    <div class="geradores container">
+      <p class="geradores-texto">Mínimo:</p>
+      <input type="number" min="1" max="9999" id="min" value="1" />
+      <p class="geradores-texto">Máximo:</p>
+      <input type="number" min="1" max="9999" id="max" value="50" />
+    </div>
+    <div class="final">
+      <button class="botao" id="botao">Gerar Número</button>
+      <h2 class="resultado-final" id="resultado-final">0</h2>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
